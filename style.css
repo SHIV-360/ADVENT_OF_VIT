@@ -1,0 +1,49 @@
+body {
+    background-color: #000;
+    color: cyan;
+    margin: 0;
+    font-family: "Courier New", Courier, monospace;
+  }
+  
+  .main-body {
+    display: grid;
+    grid-template-columns: minmax(300px, auto) 1fr;
+    grid-template-areas: "navbar mainContent";
+    grid-gap: 20px;
+  }
+  
+  #navbar {
+    grid-area: navbar;
+    position: fixed;
+  }
+  
+  #navbar a {
+    display: block;
+    border: 1px solid cyan; 
+    padding: 5px;
+    margin: 10px 0;
+    text-decoration: none;
+    color: cyan; 
+  }
+  
+  #main-doc {
+    grid-area: mainContent;
+    padding: 20px;
+  }
+  
+  header {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  code {
+    background-color: #0f0f17; 
+    display: block;
+    padding: 20px;
+  }
+  
+  
+  .highlight {
+    color: pink !important; 
+  }
+  
